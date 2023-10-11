@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ubah TextContent dan Warna</title>
+</head>
+<body>
+    <h1 id="myHeading">Ini adalah judul</h1>
+    <p id="myParagraph">Ini adalah sebuah paragraf teks.</p>
+    <button onclick="ubahTeksDanWarna()">Ubah Teks dan Warna</button>
+
+    <script>
+        function ubahTeksDanWarna() {
+            // Mengambil elemen berdasarkan ID
+            var heading = document.getElementById("myHeading");
+            var paragraph = document.getElementById("myParagraph");
+
+            // Mengubah textContent
+            heading.textContent = "Ini adalah judul yang diubah!";
+            paragraph.textContent = "Ini adalah sebuah paragraf yang diubah!";
+
+            // Mengubah warna teks dan latar belakang
+            heading.style.color = "blue"; // Ganti dengan warna teks yang Anda inginkan
+            paragraph.style.backgroundColor = "yellow"; // Ganti dengan warna latar belakang yang Anda inginkan
+        }
+    </script>
+</body>
+</html>

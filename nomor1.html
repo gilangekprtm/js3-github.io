@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Converter Suhu</title>
+</head>
+<body>
+    <h1>Konversi Suhu</h1>
+    <label>Masukkan suhu dalam Celsius: </label>
+    <input type="number" id="inputCelsius">
+    <button onclick="convertTemperature()">Konversi</button>
+    <p>Hasil konversi: <span id="hasilFahrenheit"></span> Fahrenheit</p>
+
+    <script>
+        function convertTemperature() {
+            // Mendapatkan nilai Celsius dari input
+            var inputCelsius = parseFloat(document.getElementById("inputCelsius").value);
+
+            // Menghitung Fahrenheit
+            var fahrenheit = (inputCelsius * 9/5) + 32;
+
+            // Menampilkan hasil di halaman
+            document.getElementById("hasilFahrenheit").innerHTML = fahrenheit.toFixed(2);
+        }
+    </script>
+</body>
+</html>
